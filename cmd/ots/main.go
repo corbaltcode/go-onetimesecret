@@ -17,7 +17,7 @@ import (
 	"time"
 
 	"github.com/BurntSushi/toml"
-	ots "github.com/corbaltcode/onetimesecret"
+	ots "github.com/corbaltcode/go-onetimesecret"
 	"golang.org/x/term"
 )
 

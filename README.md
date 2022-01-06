@@ -1,11 +1,11 @@
-# onetimesecret
+# go-onetimesecret
 
-onetimesecret is a Go client for [One-Time Secret](https://onetimesecret.com). It includes a command-line interface, [ots](https://github.com/corbaltcode/onetimesecret/tree/main/cmd/ots).
+go-onetimesecret is a Go client for [One-Time Secret](https://onetimesecret.com). It includes a command-line interface, [ots](https://github.com/corbaltcode/go-onetimesecret/tree/main/cmd/ots).
 
 ## Installation
 
 ```
-$ go get github.com/corbaltcode/onetimesecret
+$ go get github.com/corbaltcode/go-onetimesecret
 ```
 
 ## Creating a Client
@@ -13,7 +13,7 @@ $ go get github.com/corbaltcode/onetimesecret
 All operations are performed by calling methods on a `Client`. Create a `Client` by supplying your username (email) and password from [onetimesecret.com](https://onetimesecret.com).
 
 ```
-import ots "github.com/corbaltcode/onetimesecret"
+import ots "github.com/corbaltcode/go-onetimesecret"
 
 client := ots.Client{
   Username: "user@example.com",
@@ -124,4 +124,4 @@ go test ./...
 
 ## Contributing
 
-Submit issues and pull requests to [corbaltcode/onetimesecret](https://github.com/corbaltcode/onetimesecret) on GitHub.
+Submit issues and pull requests to [corbaltcode/go-onetimesecret](https://github.com/corbaltcode/go-onetimesecret) on GitHub.

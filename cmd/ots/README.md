@@ -5,7 +5,7 @@ ots is a command-line interface to [One-Time Secret](https://onetimesecret.com).
 ## Installation
 
 ```
-go install github.com/corbaltcode/onetimesecret/cmd/ots
+go install github.com/corbaltcode/go-onetimesecret/cmd/ots
 ```
 
 ## Setup

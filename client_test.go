@@ -87,8 +87,8 @@ func TestPut(t *testing.T) {
 	if 2*ttl-meta.MetadataTTL > ttlAllowedError {
 		t.Errorf("wrong MetadataTTL %v (want %v)", meta.MetadataTTL, 2*ttl)
 	}
-	if meta.InitialMetadataTTL != 2*ttl {
-		t.Errorf("wrong InitialMetadataTTL %v (want %v)", meta.InitialMetadataTTL, 2*ttl)
+	if meta.InitialMetadataTTL != ttl {
+		t.Errorf("wrong InitialMetadataTTL %v (want %v)", meta.InitialMetadataTTL, ttl)
 	}
 	if meta.ObfuscatedRecipient != obfuscatedRecipient {
 		t.Errorf("wrong Recipient %v (want %v)", meta.ObfuscatedRecipient, obfuscatedRecipient)
@@ -125,8 +125,8 @@ func TestGenerate(t *testing.T) {
 	if 2*ttl-meta.MetadataTTL > ttlAllowedError {
 		t.Errorf("wrong MetadataTTL %v (want %v)", meta.MetadataTTL, 2*ttl)
 	}
-	if meta.InitialMetadataTTL != 2*ttl {
-		t.Errorf("wrong InitialMetadataTTL %v (want %v)", meta.InitialMetadataTTL, 2*ttl)
+	if meta.InitialMetadataTTL != ttl {
+		t.Errorf("wrong InitialMetadataTTL %v (want %v)", meta.InitialMetadataTTL, ttl)
 	}
 	if meta.ObfuscatedRecipient != obfuscatedRecipient {
 		t.Errorf("wrong Recipient %v (want %v)", meta.ObfuscatedRecipient, obfuscatedRecipient)

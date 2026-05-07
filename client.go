@@ -1,3 +1,6 @@
+// Package onetimesecret implements the One-Time Secret HTTP API version 1
+// (form-encoded requests, JSON responses) against the US regional host.
+// Paths use /api/v1/ per https://api.onetimesecret.com/doc/api-v1/
 package onetimesecret
 
 import (
@@ -24,7 +27,7 @@ var ErrNotFound = errors.New("onetimesecret: unknown secret")
 var baseURL url.URL
 
 func init() {
-	baseURL = url.URL{Scheme: "https", Host: "onetimesecret.com"}
+	baseURL = url.URL{Scheme: "https", Host: "us.onetimesecret.com"}
 }
 
 type SecretState string

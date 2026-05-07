@@ -110,7 +110,7 @@ if err != nil { ... }
 url, err := metadata.SecretURL()
 if err != nil { ... }
 
-// prints "https://onetimesecret.com/secret/<secret-key>"
+// prints "https://us.onetimesecret.com/secret/<secret-key>"
 print(url.String())
 ```
 

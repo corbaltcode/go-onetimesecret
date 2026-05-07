@@ -70,7 +70,7 @@ func TestGetNonexistent(t *testing.T) {
 func TestPut(t *testing.T) {
 	ttl := 60 + rand.Intn(1000)
 	recipient := "foo@example.com"
-	obfuscatedRecipient := "fo*****@e*****.com"
+	obfuscatedRecipient := "fo***@e***.com"
 	meta, err := c.Put(randStr(), randStr(), ttl, recipient)
 	if err != nil {
 		t.Fatalf("put failed: %v", err)
@@ -105,7 +105,7 @@ func TestPutNothing(t *testing.T) {
 func TestGenerate(t *testing.T) {
 	ttl := 60 + rand.Intn(1000)
 	recipient := "foo@example.com"
-	obfuscatedRecipient := "fo*****@e*****.com"
+	obfuscatedRecipient := "fo***@e***.com"
 	secret, meta, err := c.Generate(randStr(), ttl, recipient)
 	if err != nil {
 		t.Fatalf("generate failed: %v", err)
